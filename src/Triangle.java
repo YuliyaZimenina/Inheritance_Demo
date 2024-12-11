@@ -8,7 +8,7 @@ public class Triangle extends TwoDimensionShape{
         of TwoDimensionShape class, as if they were declared in
         the Triangle class.
          */
-        return width * height / 2;
+        return getWidth() * getHeight() / 2;
     }
 
     void showStyle(){

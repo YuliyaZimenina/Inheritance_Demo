@@ -1,11 +1,11 @@
 //TwoDimensionShape subclass to represent rectangles.
 public class Rectangle extends TwoDimensionShape {
     boolean isSquare() {
-        if (width == height) return true;
+        if (getWidth() == getWidth()) return true;
         return false;
     }
 
     double area() {
-        return width * height;
+        return getWidth() * getHeight();
     }
 }

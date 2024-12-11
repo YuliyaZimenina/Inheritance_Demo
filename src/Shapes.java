@@ -11,11 +11,11 @@ public class Shapes {
        of the Triangle class, including those inherited
        from TwoDimensionalShape class
         */
-        firstTriangle.width = 4.0;
-        firstTriangle.height = 4.0;
+        firstTriangle.setWidth(4.0);
+        firstTriangle.setHeight(4.0);
         firstTriangle.style = "Painted";
-        secondTriangle.width = 8.0;
-        secondTriangle.height = 12;
+        secondTriangle.setWidth(8.0);
+        secondTriangle.setHeight(12);
         secondTriangle.style = "Contour";
         System.out.println("Object information firstTriangle: ");
         firstTriangle.showStyle();
@@ -27,14 +27,14 @@ public class Shapes {
         System.out.println("Area: " + secondTriangle.area());
 
         System.out.println("*** RECTANGLES ***");
-        firstRectangle.width = 5.0;
-        firstRectangle.height = 5.0;
+        firstRectangle.setWidth(5.0);
+        firstRectangle.setHeight(5.0);
         System.out.println("Object information firstRectangle: ");
         firstRectangle.showDim();
         System.out.println("Square or not?: " + firstRectangle.isSquare());
         System.out.println("Area: " + firstRectangle.area());
-        secondRectangle.width = 7.0;
-        secondRectangle.height = 4.0;
+        secondRectangle.setWidth(7.0);
+        secondRectangle.setHeight(4.0);
         System.out.println("Object information secondRectangle: ");
         secondRectangle.showDim();
         System.out.println("Square or not?: " + secondRectangle.isSquare());
