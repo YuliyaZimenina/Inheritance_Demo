@@ -1,7 +1,7 @@
 public class Shapes {
     public static void main(String[] args) {
-        Triangle firstTriangle = new Triangle();
-        Triangle secondTriangle = new Triangle();
+        Triangle firstTriangle = new Triangle("Painted", 4.0, 4.0);
+        Triangle secondTriangle = new Triangle("Contour", 8.0, 12.0);
         Rectangle firstRectangle = new Rectangle();
         Rectangle secondRectangle = new Rectangle();
 
@@ -11,12 +11,6 @@ public class Shapes {
        of the Triangle class, including those inherited
        from TwoDimensionalShape class
         */
-        firstTriangle.setWidth(4.0);
-        firstTriangle.setHeight(4.0);
-        firstTriangle.style = "Painted";
-        secondTriangle.setWidth(8.0);
-        secondTriangle.setHeight(12);
-        secondTriangle.style = "Contour";
         System.out.println("Object information firstTriangle: ");
         firstTriangle.showStyle();
         firstTriangle.showDim();
