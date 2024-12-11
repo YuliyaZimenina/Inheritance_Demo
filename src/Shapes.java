@@ -2,6 +2,10 @@ public class Shapes {
     public static void main(String[] args) {
         Triangle firstTriangle = new Triangle();
         Triangle secondTriangle = new Triangle();
+        Rectangle firstRectangle = new Rectangle();
+        Rectangle secondRectangle = new Rectangle();
+
+        System.out.println("*** TRIANGLES ***");
        /*
        Triangle-type objects are available to all members
        of the Triangle class, including those inherited
@@ -21,5 +25,19 @@ public class Shapes {
         secondTriangle.showStyle();
         secondTriangle.showDim();
         System.out.println("Area: " + secondTriangle.area());
+
+        System.out.println("*** RECTANGLES ***");
+        firstRectangle.width = 5.0;
+        firstRectangle.height = 5.0;
+        System.out.println("Object information firstRectangle: ");
+        firstRectangle.showDim();
+        System.out.println("Square or not?: " + firstRectangle.isSquare());
+        System.out.println("Area: " + firstRectangle.area());
+        secondRectangle.width = 7.0;
+        secondRectangle.height = 4.0;
+        System.out.println("Object information secondRectangle: ");
+        secondRectangle.showDim();
+        System.out.println("Square or not?: " + secondRectangle.isSquare());
+        System.out.println("Area: " + secondRectangle.area());
     }
 }

@@ -3,7 +3,7 @@ public class TwoDimensionShape {
     double width;
     double height;
 
-    void showDim(){
+    void showDim() {
         System.out.println("Width and height of the shape: " + width + " & " + height);
     }
 }
