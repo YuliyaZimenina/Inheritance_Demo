@@ -1,9 +1,10 @@
 public class Shapes {
     public static void main(String[] args) {
-        Triangle firstTriangle = new Triangle("Painted", 4.0, 4.0);
+        Triangle firstTriangle = new Triangle();
         Triangle secondTriangle = new Triangle("Contour", 8.0, 12.0);
-        Rectangle firstRectangle = new Rectangle();
-        Rectangle secondRectangle = new Rectangle();
+        Triangle thirdTriangle = new Triangle(4.0);
+        Rectangle firstRectangle = new Rectangle(5.0, 5.0);
+        Rectangle secondRectangle = new Rectangle(7.0, 4.0);
 
         System.out.println("*** TRIANGLES ***");
        /*
@@ -19,16 +20,17 @@ public class Shapes {
         secondTriangle.showStyle();
         secondTriangle.showDim();
         System.out.println("Area: " + secondTriangle.area());
+        System.out.println("Object information thirdTriangle: ");
+        thirdTriangle.showStyle();
+        thirdTriangle.showDim();
+        System.out.println("Area: " + thirdTriangle.area());
+
 
         System.out.println("*** RECTANGLES ***");
-        firstRectangle.setWidth(5.0);
-        firstRectangle.setHeight(5.0);
         System.out.println("Object information firstRectangle: ");
         firstRectangle.showDim();
         System.out.println("Square or not?: " + firstRectangle.isSquare());
         System.out.println("Area: " + firstRectangle.area());
-        secondRectangle.setWidth(7.0);
-        secondRectangle.setHeight(4.0);
         System.out.println("Object information secondRectangle: ");
         secondRectangle.showDim();
         System.out.println("Square or not?: " + secondRectangle.isSquare());

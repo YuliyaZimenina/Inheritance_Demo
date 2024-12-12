@@ -2,15 +2,21 @@
 public class Triangle extends TwoDimensionShape{
     private String style;
 
+    // Add a standard constructor
+    Triangle(){
+        super();
+        style = "not present";
+    }
     // Add a constructor
     Triangle (String s, double w, double h){
-        /*
-        Initialization of part of the object inherited
-        from the class TwoDimensionShape
-         */
-        setWidth(w);
-        setHeight(h);
+        // Calling a superclass constructor
+        super(w, h);
         style = s;
+    }
+    //Add a constructor with one argument
+    Triangle(double x){
+        super(x);
+        style = "painted";
     }
     double area(){
         /*
